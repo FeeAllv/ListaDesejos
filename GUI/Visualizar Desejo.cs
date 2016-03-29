@@ -17,22 +17,20 @@ namespace GUI
             SqlConnection conexao = ADODBConnection.Connection();
             SqlCommand comando = conexao.CreateCommand();
             comando.CommandText = "select * from tbl_desejo order by id_amigo_solicitante where IDDesejo=@id_desejo";
-            comando.Parameters.AddWithValue("@id_desejo", Solicitante);
-            Amigo amigo = null ;
+            comando.Parameters.AddWithValue("@id_amigo_solicitante", Solicitante);
+            Desejo IDDesejo = null ;
             conexao.Open();
             using (SqlDataReader reader = comando.ExecuteReader())
             {
                 if(reader.Read())
                 {
-                    amigo = new Amigo();
-                    amigo.IDAmigo = reader.GetInt32(0);
-                    amigo.Nome = reader.GetString(1);
-                    amigo.Email = reader.GetString(2);
-                    amigo.DataNascimento = reader.GetDateTime(3);
+                    IDDesejo = new IDDesejo();
+                    IDDesejo.Solicitante = reader.GetString(1);
+                    IDDesejo.Descricao = reader.GetString(2);
                    
                 }
                 conexao.Close();
             }
-            return amigo;
+            return IDDesejo;
         }
 }
