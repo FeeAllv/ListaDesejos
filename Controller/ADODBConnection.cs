@@ -20,7 +20,7 @@ namespace Controller
         {
             if (instance == null)
             {
-                instance = new SqlConnection("Data Source=PAR209617;Initial Catalog=dblistadesejos;User ID=sa;Password=123@senha");
+                instance = new SqlConnection("Data Source=PAR155990;Initial Catalog=dblistadesejos;User ID=sa;Password=123@senha");
             }
             return instance;
         }
