@@ -45,8 +45,7 @@
             this.desejosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(779, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(584, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -55,13 +54,13 @@
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.amigosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
             // amigosToolStripMenuItem
             // 
             this.amigosToolStripMenuItem.Name = "amigosToolStripMenuItem";
-            this.amigosToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.amigosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.amigosToolStripMenuItem.Text = "Amigos";
             // 
             // desejosToolStripMenuItem
@@ -70,30 +69,29 @@
             this.solicitarDesejoToolStripMenuItem,
             this.consultarDesejosToolStripMenuItem});
             this.desejosToolStripMenuItem.Name = "desejosToolStripMenuItem";
-            this.desejosToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.desejosToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.desejosToolStripMenuItem.Text = "Desejos";
             // 
             // solicitarDesejoToolStripMenuItem
             // 
             this.solicitarDesejoToolStripMenuItem.Name = "solicitarDesejoToolStripMenuItem";
-            this.solicitarDesejoToolStripMenuItem.Size = new System.Drawing.Size(279, 26);
+            this.solicitarDesejoToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.solicitarDesejoToolStripMenuItem.Text = "Solicitar Desejo";
             this.solicitarDesejoToolStripMenuItem.Click += new System.EventHandler(this.solicitarDesejoToolStripMenuItem_Click);
             // 
             // consultarDesejosToolStripMenuItem
             // 
             this.consultarDesejosToolStripMenuItem.Name = "consultarDesejosToolStripMenuItem";
-            this.consultarDesejosToolStripMenuItem.Size = new System.Drawing.Size(279, 26);
+            this.consultarDesejosToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.consultarDesejosToolStripMenuItem.Text = "Consultar Desejos Solicitados";
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 322);
+            this.ClientSize = new System.Drawing.Size(584, 262);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormPrincipal";
             this.Text = "Lista de Desejos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
